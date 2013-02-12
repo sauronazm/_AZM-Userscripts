@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           Wikipedia's images cleaner
+// @name           Wikipedia's Images Cleaner
 // @namespace      SKIPPED
 // @updateURL      SKIPPED
 // @require        SKIPPED
@@ -10,23 +10,22 @@
 // @include        http://www.ru.wikipedia.org/*
 // @include        https://www.ru.wikipedia.org/*
 // @grant          SKIPPED
-// @version        1.0.1
+// @version        1.0.2
 // @source         SKIPPED
 
 // ==/UserScript==
 
-if (typeof _AZM != "object") {
-  _AZM = {};
-}
+(function() {
+    "use strict";
+    var _AZMDeleteUselangParameter = function() {
+        var badLinkPart = "?uselang=";
+        var links = document.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].href.toLowerCase().indexOf(badLinkPart) > -1) {
+            links[i].href = links[i].href.substring(0, links[i].href.toLowerCase().indexOf(badLinkPart));
+            }
+        }
+    };
 
-_AZM.DeleteUselangParameter = function() {
-  var badLinkPart = "?uselang=";
-  var links = document.getElementsByTagName("a");
-  for (var i = 0; i < links.length; i++) {
-    if (~links[i].href.toLowerCase().indexOf(badLinkPart)) {
-    links[i].href = links[i].href.substring(0, links[i].href.toLowerCase().indexOf(badLinkPart));
-    }
-  }
-}
-
-setTimeout(_AZM.DeleteUselangParameter, 3000);
+    setTimeout(_AZMDeleteUselangParameter, 3000);
+})();
