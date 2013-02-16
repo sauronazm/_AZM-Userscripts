@@ -27,5 +27,5 @@
         }
     };
 
-    setTimeout(_AZMFixLORLinks, 2000);
+    addEventListener('load',  _AZMFixLORLinks, false );
 })();

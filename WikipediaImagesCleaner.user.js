@@ -27,5 +27,5 @@
         }
     };
 
-    setTimeout(_AZMDeleteUselangParameter, 3000);
+    addEventListener('load', _AZMDeleteUselangParameter, false);
 })();
