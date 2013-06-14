@@ -9,6 +9,10 @@
 // @include        http://www.linux.org.ru/forum/*
 // @include        https://linux.org.ru/forum/*
 // @include        https://www.linux.org.ru/forum/*
+// @include        http://linux.org.ru/news/*
+// @include        http://www.linux.org.ru/news/*
+// @include        https://linux.org.ru/news/*
+// @include        https://www.linux.org.ru/news/*
 // @grant          SKIPPED
 // @version        1.0.1
 // @source         SKIPPED
