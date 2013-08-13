@@ -13,6 +13,10 @@
 // @include        http://www.linux.org.ru/news/*
 // @include        https://linux.org.ru/news/*
 // @include        https://www.linux.org.ru/news/*
+// @include        http://linux.org.ru/polls/*
+// @include        http://www.linux.org.ru/polls/*
+// @include        https://linux.org.ru/polls/*
+// @include        https://www.linux.org.ru/polls/*
 // @grant          SKIPPED
 // @version        1.0.1
 // @source         SKIPPED
